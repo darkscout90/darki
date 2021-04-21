@@ -1,19 +1,14 @@
-
 package com.company;
 
-import java.util.Scanner;
-
 public class Main {
-
     public static void main(String[] args) {
-	String a="Мама";
-	String b="Мыла";
-	String c="Раму";
-		System.out.println(a+b+c);
-		System.out.println(a+c+b);
-		System.out.println(b+a+c);
-		System.out.println(b+c+a);
-		System.out.println(c+a+b);
-		System.out.println(c+b+a);
+        String[] s = {"Мама", "Мыла", "Раму"};
+        for (int i = 0; i <s.length ; i++) {
+            for (int j = 0; j <s.length ; j++) {
+                if (i != j){
+                    System.out.println(s[i]+s[j]+s[3-i-j]);
+                }
+            }
+        }
     }
 }
